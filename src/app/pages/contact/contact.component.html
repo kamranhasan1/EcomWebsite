@@ -1,0 +1,27 @@
+<div
+    class="w-full text-white bg-black mt-5 rounded-md mx-auto md:w-[50vw] py-20 px-10 md:px-24 flex flex-col gap-10 md:gap-4 md:justify-center">
+    <h2 class="flex items-center justify-center text-xl underline">
+        Leave a Message
+    </h2>
+
+    <form class="flex flex-col" (ngSubmit)="onSubmit($event)">
+        <label for="user_name">Name</label>
+        <input type="text" name="user_name" placeholder="Name" [(ngModel)]="userName" required
+            class="bg-transparent border-2 rounded-sm px-2 border-zinc-600" />
+
+        <label for="user_email">Email</label>
+        <input type="email" name="user_email" placeholder="Email" [(ngModel)]="userEmail" id="user_email" required
+            class="bg-transparent border-2 rounded-sm px-2 border-zinc-600" />
+
+        <label for="message">Message</label>
+        <textarea name="message" placeholder="Message" [(ngModel)]="message" id="message"
+            class="bg-transparent border-2 rounded-sm px-2 border-zinc-600"></textarea>
+
+        <input class="mt-5 w-fit self-center bg-white text-black px-10 py-1 rounded-md" type="submit" value="Send" />
+        <p class="text-center mt-3 ">Connect with us on <a href="https://www.instagram.com/glamora._cosmetics/"><span
+                    class="text-pink-600">Instagram</span>
+            </a>
+        </p>
+    </form>
+    <div class="rounded-full self-center logobg"></div>
+</div>
