@@ -8,6 +8,7 @@
   background-color: #111;
   margin: 0 auto;
 }
+
 /* overflow-x: hidden; */
 ::-webkit-scrollbar {
   width: 5px;
@@ -15,7 +16,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #111;
+  background: #faf9f9;
 }
 
 /* Handle */
